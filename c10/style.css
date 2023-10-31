@@ -1,0 +1,144 @@
+body {}
+
+/* .dice {
+    width: 200px;
+    height: 200px;
+    border: 5px solid #000;
+    border-radius: 15px;
+    position: relative;
+}
+
+.elipse {
+    width: 30px;
+    height: 30px;
+    background: red;
+    position: absolute;
+    border-radius: 50%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+} */
+
+#search-field {
+    /* outline: none; */
+    outline-color: transparent;
+    width: 60px;
+    transition: all 1s cubic-bezier(1, 0, 0.69, 0.5);
+}
+
+#search-field:focus {
+    outline-color: lawngreen;
+    width: 150px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.text {
+    width: 400px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+/* .text:before {
+    content: "";
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+} */
+
+.text:after {
+    content: "";
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) -105.46%, #FFF 58.82%);
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.button {
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(9, 51, 78);
+    border-radius: 10px;
+    padding: 10px 20px;
+    z-index: 1;
+    position: relative;
+    align-self: center;
+}
+
+.box {
+    width: 400px;
+    height: 400px;
+    background-color: tomato;
+    /* transform: rotate(50deg) scale(0.2) translate(20px, 20px) skew(15deg, 100deg); */
+    transform: scale(0.5);
+    transform-origin: top left;
+}
+
+.ball {
+    width: 70px;
+    height: 70px;
+    background-color: #e84118;
+    border-radius: 50%;
+    margin: 0px auto;
+    animation-name: bounce;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.48, -0.05, 0, 1.47);
+}
+
+.ground {
+    width: 100%;
+    height: 20px;
+    background-color: gray;
+    border-top: 5px solid #000;
+    margin: 300px 0px 0px 0px;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0px);
+    }
+
+
+    35% {
+        width: 60px;
+    }
+
+    50% {
+        transform: translateY(290px);
+        width: 70px;
+    }
+
+    /* 55% {
+        transform: translateY(301px);
+        width: 90px;
+    } */
+
+    100% {
+        transform: translateY(0px);
+    }
+
+    /* from {
+
+    }
+
+    to {
+
+    } */
+}
+
+/* @keyframes new_animation {
+
+} */
+
+
+h2 {
+    /* font-size: 50px; */
+    font-size: 2em;
+}
